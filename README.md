@@ -6,7 +6,7 @@ Accurate blood glucose prediction in Type 1 diabetes is essential for preventing
 
 Since glucose levels are influenced by multiple factors like diet, stress, and exercise, predictive models help reduce the mental and physical burden on patients and caregivers by providing automated assistance.
 
-*BIDIRECTIONAL RESERVOIR COMPUTING* 
+## 📌BIDIRECTIONAL RESERVOIR COMPUTING
 
 Reservoir Computing (RC) is a paradigm for training recurrent neural networks (RNNs) where the recurrent part (the "reservoir") is fixed and only the readout layer is trained. The reservoir projects the input data into a higher-dimensional space, and Ridge Regression maps the reservoir states to the target variable. Bidirectional Reservoir Computing combines two reservoirs: Forward Reservoir and Backward Reservoir
 
@@ -20,24 +20,47 @@ Readout Learning: A trainable readout layer combines the outputs from both reser
 
 Prediction: After training, the model predicts new sequences using the readout layer.
 
-**About The Dataset : HUPA-UCM DIABETES DATASET**
+## 🚀Features
+
+- **Deep Learning Architecture**: Utilizes a DCNN to capture complex patterns in blood glucose data.
+- **Time-Series Analysis**: Incorporates temporal dependencies to enhance prediction accuracy.
+- **Customizable Parameters**: Allows tuning of model parameters to adapt to individual patient data.
+
+## 🔧Requirements
+
+- Python 3.8+
+- TensorFlow 2.5+
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+
+
+**📊About The Dataset : HUPA-UCM DIABETES DATASET**
 
 The dataset consists of multiple CSV files, each named with an identifier (e.g., "HUPA0001P.csv" to "HUPA0028P.csv"). These represent individual patient records or data segments.
 
 **Summary of the Data:**
 
-Time-based dataset: Each row represents a timestamped health measurement.
+- Time-based dataset: Each row represents a timestamped health measurement.
+- Glucose levels: Monitors blood glucose over time.
+- Physical activity: Tracks calories burned and steps taken.
+- Heart rate: Records fluctuations in heart rate.
+- Insulin management: Captures basal insulin rate and bolus insulin delivery.
+- Dietary intake: Logs carbohydrate consumption.
 
-Glucose levels: Monitors blood glucose over time.
+## ⚙️ Installation
 
-Physical activity: Tracks calories burned and steps taken.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Devika7447/Type-1-Diabetes-BG-Prediction-DCNN.git
 
-Heart rate: Records fluctuations in heart rate.
+## 🙌 Acknowledgments
 
-Insulin management: Captures basal insulin rate and bolus insulin delivery.
-
-Dietary intake: Logs carbohydrate consumption.
-
+- This project is inspired by ongoing research in **blood glucose prediction** for Type-1 Diabetes management.
+- Special thanks to **researchers and healthcare professionals** working to improve diabetes prediction and treatment.
+- Gratitude to the **open-source community** for providing essential libraries like TensorFlow, Pandas, and Scikit-learn, which made this project possible.
+- Thanks to all contributors who helped refine the model and enhance its performance.
 
 
 
