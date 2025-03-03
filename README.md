@@ -20,20 +20,31 @@ Readout Learning: A trainable readout layer combines the outputs from both reser
 
 Prediction: After training, the model predicts new sequences using the readout layer.
 
-## 🚀Features
+## 🚀 Features of the BRC Model
 
-- **Deep Learning Architecture**: Utilizes a DCNN to capture complex patterns in blood glucose data.
-- **Time-Series Analysis**: Incorporates temporal dependencies to enhance prediction accuracy.
-- **Customizable Parameters**: Allows tuning of model parameters to adapt to individual patient data.
+- **Biologically Relevant Constraints (BRC)**: Integrates physiological constraints to enhance blood glucose prediction accuracy.
+- **Advanced Data Preprocessing**: Combines multiple datasets, handles missing values, and applies feature engineering techniques.
+- **Deep Learning with DCNN**: Utilizes a Deep Convolutional Neural Network (DCNN) for time-series blood glucose prediction.
+- **Feature Selection Optimization**: Identifies the most significant features, improving model interpretability and accuracy.
+- **Custom Hyperparameter Tuning**: Supports adjustable batch size, epochs, and learning rate for optimized performance.
+- **Multi-Source Data Integration**: Merges glucose readings, insulin intake, carbohydrate consumption, and activity levels for holistic prediction.
+- **Performance Metrics**: Evaluates model performance using Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and other key metrics.
 
-## 🔧Requirements
 
-- Python 3.8+
-- TensorFlow 2.5+
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
+## 🔧 Requirements
+
+To run this project, ensure you have the following dependencies installed:  
+
+### 📌 Required Libraries  
+- Python 3.8+  
+- TensorFlow 2.5+  
+- NumPy  
+- Pandas  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+- Keras  
+- SciPy  
 
 
 **📊About The Dataset : HUPA-UCM DIABETES DATASET**
@@ -49,11 +60,11 @@ The dataset consists of multiple CSV files, each named with an identifier (e.g.,
 - Insulin management: Captures basal insulin rate and bolus insulin delivery.
 - Dietary intake: Logs carbohydrate consumption.
 
-## ⚙️ Installation
+## ⚙ Installation
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Devika7447/Type-1-Diabetes-BG-Prediction-DCNN.git
+   git clone https://github.com/Devika7447/Type-1-Diabetes-BG-Prediction-BRC.git
 
 ## 🙌 Acknowledgments
 
