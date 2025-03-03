@@ -6,11 +6,11 @@ Accurate blood glucose prediction in Type 1 diabetes is essential for preventing
 
 Since glucose levels are influenced by multiple factors like diet, stress, and exercise, predictive models help reduce the mental and physical burden on patients and caregivers by providing automated assistance.
 
-#BIDIRECTIONAL RESERVOIR COMPUTING 
+*BIDIRECTIONAL RESERVOIR COMPUTING* 
 
 Reservoir Computing (RC) is a paradigm for training recurrent neural networks (RNNs) where the recurrent part (the "reservoir") is fixed and only the readout layer is trained. The reservoir projects the input data into a higher-dimensional space, and Ridge Regression maps the reservoir states to the target variable. Bidirectional Reservoir Computing combines two reservoirs: Forward Reservoir and Backward Reservoir
 
-How It Works?
+**How It Works?**
 
 Input Transformation: Sequential data (glucose readings) is fed into the forward and backward reservoirs.
 
@@ -19,6 +19,24 @@ Reservoir Dynamics: The reservoirs transform the input data into a high-dimensio
 Readout Learning: A trainable readout layer combines the outputs from both reservoirs to predict the target 
 
 Prediction: After training, the model predicts new sequences using the readout layer.
+
+**About The Dataset : HUPA-UCM DIABETES DATASET**
+
+The dataset consists of multiple CSV files, each named with an identifier (e.g., "HUPA0001P.csv" to "HUPA0028P.csv"). These represent individual patient records or data segments.
+
+**Summary of the Data:**
+
+Time-based dataset: Each row represents a timestamped health measurement.
+
+Glucose levels: Monitors blood glucose over time.
+
+Physical activity: Tracks calories burned and steps taken.
+
+Heart rate: Records fluctuations in heart rate.
+
+Insulin management: Captures basal insulin rate and bolus insulin delivery.
+
+Dietary intake: Logs carbohydrate consumption.
 
 
 
